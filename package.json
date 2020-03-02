@@ -1,0 +1,32 @@
+{
+  "name": "@eliperelman/in-memory-db",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "author": "Eli Perelman <eli@eliperelman.com>",
+  "license": "MIT",
+  "bin": "bin/in-memory-db.js",
+  "files": [
+    "bin",
+    "build"
+  ],
+  "scripts": {
+    "lint": "eslint --cache --format codeframe --ext ts,js src bin .eslintrc.js .neutrinorc.js webpack.config.js",
+    "build": "webpack --mode production",
+    "start": "yarn build && node bin/in-memory-db.js"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@mozilla-frontend-infra/node-lint": "^2.0.0",
+    "@neutrinojs/node": "^9.1.0",
+    "eslint": "^6.8.0",
+    "neutrino": "^9.1.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "rxjs": "^6.5.4",
+    "source-map-support": "^0.5.16",
+    "terminal-kit": "^1.33.15"
+  }
+}
