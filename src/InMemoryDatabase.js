@@ -17,6 +17,7 @@ export default class InMemoryDatabase {
     switch (command) {
       case 'BEGIN': {
         this.transactions = this.transactions.unshift(transaction);
+
         return;
       }
 
@@ -26,12 +27,14 @@ export default class InMemoryDatabase {
         }
 
         this.transactions = this.transactions.shift();
+
         return;
       }
 
       case 'COMMIT': {
         this.database = transaction;
         this.transactions = Stack();
+
         return;
       }
 

@@ -6,11 +6,11 @@ module.exports = {
     root: __dirname,
   },
   use: [
-    // lint({
-    //   rules: {
-    //     'max-classes-per-file': 'off',
-    //   },
-    // }),
+    lint({
+      rules: {
+        'max-classes-per-file': 'off',
+      },
+    }),
     node({
       targets: {
         node: '12.0',
