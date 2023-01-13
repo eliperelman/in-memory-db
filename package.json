@@ -27,6 +27,6 @@
     "immutable": "^4.0.0-rc.12",
     "rxjs": "^6.5.4",
     "source-map-support": "^0.5.16",
-    "terminal-kit": "^1.33.15"
+    "terminal-kit": "^2.1.8"
   }
 }
